@@ -261,7 +261,7 @@ def main(config:dict,
         # SAVE CHECKPOINT
         if (rank == 0) and (epoch % config['trainer']['save_period'] == 0) :
             print('Save !')
-            save_checkpoint(checkpoint_dir,base_logger, model,optimizer,config, epoch, save_best=False)
+            save_checkpoint(checkpoint_dir,base_logger, model,optimizer,config, epoch+1, save_best=False)
             
             
 
