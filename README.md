@@ -1,4 +1,4 @@
-# deeplabv3plus_DPDDP
+# pytorch deeplabv3plus with DP and DDP
 This repository is an implementation of deeplabv3+ with dp and ddp.
 
 -- DP : DataParallel (DP). Implements data parallelism at the module level.
