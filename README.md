@@ -15,15 +15,15 @@ This repository is an implementation of deeplabv3+ with dp and ddp.
 <br/>
 
 ### Available Models
-- (**Deeplab V3+**) Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/abs/1802.02611)
-- (**GCN**) Large Kernel Matter, Improve Semantic Segmentation by Global Convolutional Network [[Paper]](https://arxiv.org/abs/1703.02719)
-- (**UperNet**) Unified Perceptual Parsing for Scene Understanding [[Paper]](https://arxiv.org/abs/1807.10221)
-- (**DUC, HDC**) Understanding Convolution for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1702.08502) 
-- (**PSPNet**) Pyramid Scene Parsing Network [[Paper]](http://jiaya.me/papers/PSPNet_cvpr17.pdf) 
-- (**ENet**) A Deep Neural Network Architecture for Real-Time Semantic Segmentation [[Paper]](https://arxiv.org/abs/1606.02147)
-- (**U-Net**) Convolutional Networks for Biomedical Image Segmentation (2015) [[Paper]](https://arxiv.org/abs/1505.04597)
-- (**SegNet**) A Deep ConvolutionalEncoder-Decoder Architecture for ImageSegmentation (2016) [[Paper]](https://arxiv.org/pdf/1511.00561)
-- (**FCN**) Fully Convolutional Networks for Semantic Segmentation (2015) [[Paper]](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) 
+∘ (**Deeplab V3+**) Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/abs/1802.02611)
+∘ (**GCN**) Large Kernel Matter, Improve Semantic Segmentation by Global Convolutional Network [[Paper]](https://arxiv.org/abs/1703.02719)
+∘ (**UperNet**) Unified Perceptual Parsing for Scene Understanding [[Paper]](https://arxiv.org/abs/1807.10221)
+∘ (**DUC, HDC**) Understanding Convolution for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1702.08502) 
+∘ (**PSPNet**) Pyramid Scene Parsing Network [[Paper]](http://jiaya.me/papers/PSPNet_cvpr17.pdf) 
+∘ (**ENet**) A Deep Neural Network Architecture for Real-Time Semantic Segmentation [[Paper]](https://arxiv.org/abs/1606.02147)
+∘ (**U-Net**) Convolutional Networks for Biomedical Image Segmentation (2015) [[Paper]](https://arxiv.org/abs/1505.04597)
+∘ (**SegNet**) A Deep ConvolutionalEncoder-Decoder Architecture for ImageSegmentation (2016) [[Paper]](https://arxiv.org/pdf/1511.00561)
+∘ (**FCN**) Fully Convolutional Networks for Semantic Segmentation (2015) [[Paper]](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) 
 
 
 <br/>
@@ -63,18 +63,20 @@ Download - (2) : [Additional Dataset 2](https://www.dropbox.com/s/oeu149j8qtbs1x
 <br/>
 <br/>
 
-* #### Train
+* #### Train (DP)
+     
+```shell
+python train_dp.py
+```
 
-     DP
-     ```shell
-     python train_dp.py
-     ```
 
+* #### Train (DDP)
 
-     DDP
-     ```shell
-     python -m torch.distributed.launch --nproc_per_node=2 train_ddp.py
-     ```
+```shell
+python train_dp.py
+```
+
+     
 
 
 
