@@ -6,5 +6,5 @@ This repository is an implementation of deeplabv3+ with dp and ddp.
 -- DDP : DistributedDataParallel (DDP) implements data parallelism at the module level which can run across multiple machines.
 
 
-## Creating a virtual environment
+#### Creating a virtual environment
 
