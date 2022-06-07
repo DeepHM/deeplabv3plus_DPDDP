@@ -64,11 +64,11 @@ $ tar -xvf VOCtrainval_11-May-2012.tar
 
 Download - (1) : [Additional Dataset 1](https://www.dropbox.com/sh/jicjri7hptkcu6i/AACHszvCyYQfINpRI1m5cNyta?dl=0&lst=)
 
-> Then add the files to the path below -> ``` voc2012_trainval/ImageSets/Segmentation ```
+> Then add the files to the path below -> ``` voc2012_trainval/ImageSets/Segmentation/**.txt ```
 
 Download - (2) : [Additional Dataset 2](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0)
 
-> Then add the files to the path below -> ``` voc2012_trainval/SegmentationClassAug/ ```
+> Then add the files to the path below -> ``` voc2012_trainval/SegmentationClassAug/** ```
 
 <br/>
 <br/>
